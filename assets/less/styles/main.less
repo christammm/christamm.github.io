@@ -1,0 +1,143 @@
+body{
+    background:#2c3358;
+}
+.main-page-col{
+    padding:10px;
+    flex-grow:2;
+    .main-page-content{
+        padding:10px;
+        overflow:auto;
+        
+        .hero{
+            position:relative;
+            overflow:hidden;
+            max-height:50vh;
+            .hero-img{
+                width:100%;
+            }
+            
+            .hero-text{
+                position:absolute;
+                bottom:40px;
+                left:20px;
+                color:#ffffff;
+                max-width:1000px;
+                h1{
+                    font-size:36px !important;
+                    font-weight:700;
+                }
+                p{
+                    font-size:25px;
+                    font-weight: 300;
+                }
+            }
+        }
+        
+        .col-100.about-me{
+            display:flex;
+            justify-content: stretch;
+            flex-direction: row;
+            padding-top:10px;
+            img{
+                width:100%;
+            }
+            
+            .about-img,.about-description{
+               float:none;
+                width:50%;
+            }
+            
+            .about-description{
+                background:#e2e2e2;
+                display:flex;
+                justify-items: center;
+                align-items: center;
+                padding:30px;
+                h2{
+                    font-size:30px !important;
+                    font-weight:600;
+                    padding-bottom:20px;
+                }
+                p{
+                    font-size: 20px;
+                    line-height:30px;
+                }
+            }
+        }
+        
+        .col-100.section-heading{
+            padding-top:10px;
+            .my-work-heading{
+                background:white;
+                .heading-title{
+                    font-size:30px;
+                    font-weight:600;
+                    padding:30px;
+                }
+            }
+        }
+        
+        .work-experience{
+            margin-top:10px;
+//            background:white;
+            padding:30px;
+            display:table;
+            
+            &#reingroup{
+                background:#008A8C !important;
+                .job-description{
+                    color:#fff;
+                }
+            }
+
+            &#aumcore{
+                background:#EC1C2C !important;
+                .job-description{
+                    color:#fff;
+                }
+            }
+            
+             &#livetiles{
+                background:#3A3937 !important;
+                 .job-description{
+                    color:#fff;
+                }
+            }
+            
+            
+            .job-image,.job-description{
+                display:table-cell;
+                vertical-align: middle;
+                float:none;
+            }
+            .job-image{
+                text-align:center;
+            }
+            .job-description{
+                padding-left:10px;
+            }
+            
+            p{
+                line-height:1.3em;
+            }
+            
+            .work-company-title{
+                font-size:27px !important;
+                font-weight: 800;
+            }
+            .work-position{
+                font-size: 23px;
+            }
+            .work-date{
+                font-size: 20px;
+                font-weight: 700;
+            }
+            .work-description{
+                line-height:1.4em;
+            }
+            
+            
+        }
+    }
+
+}

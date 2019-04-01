@@ -1,0 +1,43 @@
+.wrapper{
+
+    .row{
+        
+        display:flex;
+        justify-content: center;
+        align-items:flex-start;
+        overflow:auto;
+        max-width:1440px;
+        padding: 20px 0;
+        margin:0 auto;
+        width:100%;
+
+        .col-{
+            &100,&75,&66,&50,&33,&25{
+                display:block;
+                float:left;   
+            }
+            &100{
+                width:100%;
+            }
+            &75{
+                width:calc(75% - 10px);
+            }
+            &66{
+                width:66%;
+            }
+            &50{
+                width:50%;
+            }
+            &33{
+                width:33%;
+            }
+            &25{
+                width:calc(25% - 10px);
+            }
+            
+            
+        }
+
+
+    }
+}
