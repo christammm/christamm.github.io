@@ -1,8 +1,14 @@
 <html>
-    <head>
+    <head>    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.sticky.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
+        
         <link rel="stylesheet" text="css" href="./assets/css/style-pt.css"/>
-        <link rel="stylesheet" text="css" href="./assets/assets/css/normalize.css"/>
     </head>
     
     <body>
@@ -17,23 +23,23 @@
                                 <div class="logo">
                                     <img class="logo-portrait" src="assets/img/portfolio-img.jpg">
                                     <h2>Chris Tam</h2>
-                                    <h3>Aspiring Web Developer</h3>
+                                    <h3>Looking for a full-time position.</h3>
                                 </div>
                                 <hr></hr>
                                 <ul class="nav-list">
-                                    <li class="nav-list-item"><a href="">Home</a></li>
-                                    <li class="nav-list-item"><a href="">About</a></li>
-                                    <li class="nav-list-item"><a href="">Portfolio</a></li>
+                                    <li class="nav-list-item"><a href="#home">Home</a></li>
+                                    <li class="nav-list-item"><a href="#about">About</a></li>
+                                    <li class="nav-list-item"><a href="#portfolio">Portfolio</a></li>
                                     <li class="nav-list-item"><a href="">Services</a></li>
-                                    <li class="nav-list-item"><a href="">Contact</a></li>
+                                    <li class="nav-list-item"><a target="_blank" href="https://docs.google.com/document/d/1-mEdO-uRx4IkM89LTH-4kRdkmlCClrkTAthS1qe660E/edit?usp=sharing">Download Resume</a></li>
                                 </ul>
                                 
                                 <hr></hr>
                                 <h3>Connect on Social Media</h3>
                                 <ul class="nav-list-social">
-                                    <li class="nav-list-item social"><a href="">a</a></li>
-                                    <li class="nav-list-item social"><a href="">a</a></li>
-                                    <li class="nav-list-item social"><a href="">a</a></li>
+                                    <li class="nav-list-item social"><a target="_blank" href="https://www.facebook.com/chris.tam.754?ref=bookmarks"><i class="fab fa-2x fa-facebook-f"></i></a></li>
+                                    <li class="nav-list-item social"><a target="_blank" href="https://github.com/christammm/"><i class="fab fa-2x fa-github"></i></a></li>
+                                    <li class="nav-list-item social"><a target="_blank" href="https://www.linkedin.com/in/christopher-tam-4a16b0a8/"><i class="fab fa-2x fa-linkedin-in"></i></a></li>
                                 </ul>
                             </nav>
                         
@@ -41,15 +47,16 @@
                         
                         <div class="col-66 main-page-col">
                             <div class="main-page-content">
-                                <div class="col-100 hero">
+                                <div class="col-100 hero" id="home">
                                     <img class="hero-img" src="assets/img/hero-background-1.jpg">
                                     <div class="hero-text">
                                         <h1>A Soccer Enthusiast, and Professional Google Searcher</h1>
                                         <p>Aspiring web developer looking for work opportunities in IT and Web/Software development</p>
+                                        <a class="cta-button" target="_blank" href="https://docs.google.com/document/d/1-mEdO-uRx4IkM89LTH-4kRdkmlCClrkTAthS1qe660E/edit?usp=sharing">Download Resume</a>
                                     </div>
                                 </div>
                                 
-                                <div class="col-100 section-heading">
+                                <div class="col-100 section-heading" id="about">
                                     <div class="my-work-heading">
                                         <h2 class="heading-title">About Me</h2>
                                     </div>
@@ -61,9 +68,10 @@
                                     </div>
                                     <div class="about-description">
                                         <div class="about-text">
-                                        <h2>Hi there, I'm Chris</h2>
+                                        <h2>Hi there, I'm Chris.</h2>
                                         <p> I am a person seeking a full time opportunity.<br>
-                                            I live as a 'young-adult/child' hybrid. My interests include rock climbing outdoors, hiking, playing video games, musical instruments, attending concerts.</p>
+                                            My interests include rock climbing outdoors, hiking, playing video games, musical instruments, attending concerts.<br>
+                                            I am also a supporter of the New York City Football Club (NYCFC). Come on you boys in blue!</p>
                                         </div>
                                     </div>
                                 </div>
@@ -129,19 +137,66 @@
                                 </div>
                                 
                                 
-                                <div class="col-100 section-heading">
+                                <div class="col-100 section-heading" id="portfolio">
                                     <div class="my-work-heading">
-                                        <h2 class="heading-title">My Work</h2>
+                                        <h2 class="heading-title">Work Examples</h2>
                                     </div>
                                 </div>
-                                
-                                <div class="col-50">
-                                    <div class="portfolio-item">
+                                <div class="portfolio">
+                                    
+                                    <div class="col-100">
+                                        <div class="portfolio-item">
+                                            <figure>
+                                                <img src="assets/img/portfolio-hero.jpg">
+                                                <figcaption>
+
+                                                </figcaption>
+                                            </figure>
+                                        </div>
                                     </div>
-                                </div>
-                                
-                                <div class="col-50">
-                                    <div class="portfolio-item">
+                                    
+                                    <div class="col-50">
+                                        <div class="portfolio-item">
+                                            <figure>
+                                                <img src="assets/img/portfolio-first.jpg">
+                                                <figcaption>
+
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-50">
+                                        <div class="portfolio-item">
+                                            <figure>
+                                                <img src="assets/img/portfolio-second.jpg">
+                                                <figcaption>
+
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-50">
+                                        <div class="portfolio-item">
+                                            <figure>
+                                                <img src="assets/img/portfolio-third.jpg">
+                                                <figcaption>
+
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-50">
+                                        <div class="portfolio-item">
+                                            <figure>
+                                                <img src="assets/img/portfolio-fourth.jpg">
+                                                <figcaption>
+
+                                                </figcaption>
+                                            </figure>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -152,9 +207,7 @@
         </div>
 
 <footer>
-    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.sticky.js"></script>
-    <script type="text/javascript" src="assets/js/main.js"></script>
+
 
 </footer>
     </body>

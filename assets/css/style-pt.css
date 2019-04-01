@@ -70,6 +70,7 @@ div {
   display: block;
 }
 .sidebar-nav .side-nav .nav-list-social {
+  text-align: center;
   padding-top: 10px;
   display: inline-block !important;
 }
@@ -77,12 +78,15 @@ div {
   display: inline-block !important;
   width: 40px;
   height: 40px;
-  background: white;
+  padding: 5px;
   margin: 0 5px;
+}
+.sidebar-nav .side-nav .nav-list-social .nav-list-item.social:hover {
+  opacity: 0.7;
 }
 .sidebar-nav .side-nav .nav-list .nav-list-item {
   display: block;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 22px;
   line-height: 50px;
 }
@@ -247,8 +251,9 @@ body {
 }
 .main-page-col .main-page-content .hero .hero-text {
   position: absolute;
-  bottom: 40px;
-  left: 20px;
+  bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
   color: #ffffff;
   max-width: 1000px;
 }
@@ -353,6 +358,18 @@ body {
 .main-page-col .main-page-content .work-experience .work-description {
   line-height: 1.4em;
 }
+.main-page-col .main-page-content .portfolio .col-50 {
+  width: calc(50% - 10px);
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.main-page-col .main-page-content .portfolio .portfolio-item {
+  margin-top: 10px;
+}
+.main-page-col .main-page-content .portfolio .portfolio-item figure img {
+  width: 100%;
+}
 .wrapper .row {
   display: flex;
   justify-content: center;
@@ -389,5 +406,22 @@ body {
 }
 .wrapper .row .col-25 {
   width: calc(25% - 10px);
+}
+.cta-button {
+  margin-top: 10px;
+  padding: 20px;
+  font-size: 16px;
+  display: block;
+  position: relative;
+  background: #5077fb !important;
+  max-width: 240px;
+  text-align: center;
+  transition: all 0.1s linear;
+}
+.cta-button:hover {
+  opacity: 0.9;
+}
+p {
+  font-family: 'Poppins', 'Montserrat', 'sans-serif' !important;
 }
 /*# sourceMappingURL=style-pt.css.map */
