@@ -152,8 +152,37 @@ body{
                     margin-top:10px;
 
                     figure{
+                        position:relative;
+                        overflow:hidden;
                         img{
                             width:100%;
+                            transition: all .3s ease;
+                        }
+                        &:hover{
+                            figcaption{
+                                bottom:0px !important;
+                            }
+                            img{
+                                transform: scale(1.2);
+                            }
+                        }
+                        figcaption{
+                            position:absolute;
+                            bottom:-100px;
+                            padding:20px;
+                            width:100%;
+                            color:#fff;
+                            background: #5077fb;
+                            transition: bottom .3s ease;
+                            .example-title{
+                                font-family:'Poppins','sans-serif' !important;
+                                line-height:1.2em;
+                                font-size:25px;
+                            }
+                            .example-category{
+                                line-height:1.3em;
+                                color:#ffe000;
+                            }
                         }
                     }
                 }

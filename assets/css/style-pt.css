@@ -367,8 +367,37 @@ body {
 .main-page-col .main-page-content .portfolio .portfolio-item {
   margin-top: 10px;
 }
+.main-page-col .main-page-content .portfolio .portfolio-item figure {
+  position: relative;
+  overflow: hidden;
+}
 .main-page-col .main-page-content .portfolio .portfolio-item figure img {
   width: 100%;
+  transition: all 0.3s ease;
+}
+.main-page-col .main-page-content .portfolio .portfolio-item figure:hover figcaption {
+  bottom: 0px !important;
+}
+.main-page-col .main-page-content .portfolio .portfolio-item figure:hover img {
+  transform: scale(1.2);
+}
+.main-page-col .main-page-content .portfolio .portfolio-item figure figcaption {
+  position: absolute;
+  bottom: -100px;
+  padding: 20px;
+  width: 100%;
+  color: #fff;
+  background: #5077fb;
+  transition: bottom 0.3s ease;
+}
+.main-page-col .main-page-content .portfolio .portfolio-item figure figcaption .example-title {
+  font-family: 'Poppins', 'sans-serif' !important;
+  line-height: 1.2em;
+  font-size: 25px;
+}
+.main-page-col .main-page-content .portfolio .portfolio-item figure figcaption .example-category {
+  line-height: 1.3em;
+  color: #ffe000;
 }
 .wrapper .row {
   display: flex;
