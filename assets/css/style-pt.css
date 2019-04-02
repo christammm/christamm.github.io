@@ -39,12 +39,12 @@ div {
 }
 .sidebar-nav .side-nav hr {
   width: 100%;
-  margin: 20px 0;
+  margin: 10px 0;
   opacity: 0.4;
 }
 .sidebar-nav .side-nav .logo {
   text-align: center;
-  padding: 20px 0;
+  padding: 5px 0;
 }
 .sidebar-nav .side-nav .logo .logo-portrait {
   width: 100%;
@@ -63,6 +63,7 @@ div {
   text-align: center!Important;
   padding: 10px;
   font-weight: 400;
+  font-size: 20px !important;
 }
 .sidebar-nav .side-nav .nav-list {
   padding: 20px;
@@ -87,8 +88,8 @@ div {
 .sidebar-nav .side-nav .nav-list .nav-list-item {
   display: block;
   font-weight: 400;
-  font-size: 22px;
-  line-height: 50px;
+  font-size: 20px;
+  line-height: 36px;
 }
 .sidebar-nav .side-nav .nav-list .nav-list-item a {
   color: #fff;
@@ -306,6 +307,31 @@ body {
   font-weight: 600;
   padding: 30px;
 }
+.main-page-col .main-page-content .skills {
+  padding: 20px;
+  background: #fff;
+  margin-top: 10px;
+}
+.main-page-col .main-page-content .skills h3 {
+  font-weight: 600;
+  font-family: 'Poppins', 'sans-serif' !important;
+  padding-bottom: 15px;
+  line-height: 1.4em;
+}
+.main-page-col .main-page-content .skills .skill-list {
+  display: inline;
+  overflow: auto;
+  margin: 10px 0;
+}
+.main-page-col .main-page-content .skills .skill-list .skill-button {
+  font-family: 'Poppins', 'sans-serif' !important;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 4px;
+  display: inline-block;
+  background: #eaeaea;
+  padding: 5px 10px;
+}
 .main-page-col .main-page-content .work-experience {
   margin-top: 10px;
   padding: 30px;
@@ -328,6 +354,12 @@ body {
 }
 .main-page-col .main-page-content .work-experience#livetiles .job-description {
   color: #fff;
+}
+.main-page-col .main-page-content .work-experience#newps {
+  background: #fff !important;
+}
+.main-page-col .main-page-content .work-experience#newps .job-description {
+  color: #000;
 }
 .main-page-col .main-page-content .work-experience .job-image,
 .main-page-col .main-page-content .work-experience .job-description {
@@ -380,6 +412,7 @@ body {
 }
 .main-page-col .main-page-content .portfolio .portfolio-item figure:hover img {
   transform: scale(1.2);
+  opacity: 0.7;
 }
 .main-page-col .main-page-content .portfolio .portfolio-item figure figcaption {
   position: absolute;
@@ -398,6 +431,36 @@ body {
 .main-page-col .main-page-content .portfolio .portfolio-item figure figcaption .example-category {
   line-height: 1.3em;
   color: #ffe000;
+}
+.main-page-col .main-page-content .contact {
+  overflow: auto;
+  margin-top: 10px;
+  padding: 20px;
+  background: #fff;
+  text-align: center;
+}
+.main-page-col .main-page-content .contact h3 {
+  font-family: 20px;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 10px;
+}
+.main-page-col .main-page-content .contact .secondary {
+  font-family: 'Poppins', 'sans-serif' !important;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2em;
+}
+.main-page-col .main-page-content .contact .social {
+  padding-top: 20px;
+  display: block;
+}
+.main-page-col .main-page-content .contact .cta {
+  text-align: center;
+}
+.main-page-col .main-page-content .contact .cta .cta-button {
+  max-width: none;
+  color: #fff;
 }
 .wrapper .row {
   display: flex;
@@ -440,12 +503,12 @@ body {
   margin-top: 10px;
   padding: 20px;
   font-size: 16px;
-  display: block;
   position: relative;
   background: #5077fb !important;
   max-width: 240px;
   text-align: center;
   transition: all 0.1s linear;
+  display: block;
 }
 .cta-button:hover {
   opacity: 0.9;
