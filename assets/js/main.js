@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $(".side-nav").sticky({topSpacing:10});
     
-    $(".nav-list-item a").click(function(event) {
+    $(".nav-list .nav-list-item a").click(function(event) {
     event.preventDefault();
     
     var href=$(this).attr('href');
