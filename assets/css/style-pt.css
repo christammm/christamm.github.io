@@ -28,17 +28,20 @@ div {
   box-sizing: border-box;
 }
 .sidebar-nav {
+  top: 0;
   max-width: 450px;
   color: white;
   padding: 10px;
 }
 @media screen and (max-width: 1099px) {
   .sidebar-nav {
+    position: fixed !important;
     max-width: 2000px !important;
     width: 100% !important;
     position: absolute;
     z-index: 100;
     padding: 0 !important;
+    opacity: 0.98;
   }
 }
 .sidebar-nav .side-nav {
@@ -121,7 +124,7 @@ div {
     transition: all 0.2s linear;
   }
   .sidebar-nav .side-nav .below-nav.active {
-    height: 100% !important;
+    height: 100vh !important;
     transition: all 0.2s linear;
   }
 }
@@ -334,6 +337,20 @@ body {
 }
 .main-page-col .main-page-content .hero .hero-img {
   width: 100%;
+}
+@media (max-width: 767px) {
+  .main-page-col .main-page-content .hero .hero-img {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .main-page-col .main-page-content .hero {
+    height: 76vh;
+    max-height: 100vh;
+    background: url('../img/hero-background-1.jpg');
+    margin-top: 77px;
+    background-position: center;
+  }
 }
 .main-page-col .main-page-content .hero .hero-text {
   position: absolute;

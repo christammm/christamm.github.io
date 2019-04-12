@@ -17,6 +17,17 @@ body{
             max-height:50vh;
             .hero-img{
                 width:100%;
+                @media (max-width:767px){
+                    display:none;
+                }
+            }
+            
+            @media (max-width:767px){
+                height: 76vh;
+                max-height: 100vh;
+                background: url('../img/hero-background-1.jpg');
+                margin-top: 77px;
+                background-position: center;
             }
             
             .hero-text{
