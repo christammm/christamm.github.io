@@ -1,8 +1,10 @@
 .wrapper{
 
     .row{
-        
         display:flex;
+        @media (max-width:1099px){
+            display:block !important;
+        }
         justify-content: center;
         align-items:flex-start;
         overflow:auto;
@@ -15,6 +17,11 @@
             &100,&75,&66,&50,&33,&25{
                 display:block;
                 float:left;   
+                @media (max-width:767px){
+                    &.port{
+                        width:100% !important;   
+                    }
+                }
             }
             &100{
                 width:100%;

@@ -2,8 +2,11 @@ body{
     background:#2c3358;
 }
 .main-page-col{
+    @media (max-width:1099px){
+        width:100% !important;
+    }
     padding:10px;
-    flex-grow:2;
+    
     .main-page-content{
         padding:10px;
         overflow:auto;
@@ -42,10 +45,16 @@ body{
             img{
                 width:100%;
             }
-            
+            @media (max-width: 767px){
+                display:block !important;
+            }
             .about-img,.about-description{
                float:none;
                 width:50%;
+                @media (max-width: 767px){
+                    width:100%;
+                    display:none;
+                }
             }
             
             .about-description{
@@ -142,6 +151,9 @@ body{
             
             .job-image,.job-description{
                 display:table-cell;
+                @media (max-width:767px){
+                    display:block !important;
+                }
                 vertical-align: middle;
                 float:none;
             }
@@ -150,6 +162,9 @@ body{
             }
             .job-description{
                 padding-left:10px;
+                @media (max-width:767px){
+                    width:100%;
+                }
             }
             
             p{
@@ -204,6 +219,9 @@ body{
                         figcaption{
                             position:absolute;
                             bottom:-100px;
+                            @media (max-width:767px){
+                                bottom:0px;
+                            }
                             padding:20px;
                             width:100%;
                             color:#fff;

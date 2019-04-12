@@ -32,8 +32,17 @@ div {
   color: white;
   padding: 10px;
 }
+@media screen and (max-width: 1099px) {
+  .sidebar-nav {
+    max-width: 2000px !important;
+    width: 100% !important;
+    position: absolute;
+    z-index: 100;
+    padding: 0 !important;
+  }
+}
 .sidebar-nav .side-nav {
-  padding: 40px;
+  padding: 10px;
   background: #5077fb;
   width: 100%;
 }
@@ -42,7 +51,13 @@ div {
   margin: 10px 0;
   opacity: 0.4;
 }
+@media screen and (max-width: 1099px) {
+  .sidebar-nav .side-nav hr {
+    display: none;
+  }
+}
 .sidebar-nav .side-nav .logo {
+  overflow: auto;
   text-align: center;
   padding: 5px 0;
 }
@@ -54,16 +69,82 @@ div {
   margin-bottom: 10px;
   text-align: center;
 }
-.sidebar-nav .side-nav .logo h2 {
-  font-size: 30px !important;
+@media screen and (max-width: 1099px) {
+  .sidebar-nav .side-nav .logo .logo-portrait {
+    float: left;
+    max-width: 60px;
+  }
+}
+@media screen and (max-width: 1099px) {
+  .sidebar-nav .side-nav .logo h2,
+  .sidebar-nav .side-nav .logo h3 {
+    text-align: left !important;
+    padding-left: 20px !important;
+    font-size: 20px !important;
+  }
+}
+@media screen and (max-width: 1099px) {
+  .sidebar-nav .side-nav .logo .nav-title {
+    float: left;
+  }
+}
+.sidebar-nav .side-nav .logo .nav-title h2 {
+  font-size: 30px;
   text-align: center;
   font-weight: bold;
 }
-.sidebar-nav .side-nav .logo h3 {
-  text-align: center!Important;
+.sidebar-nav .side-nav .logo .nav-title h3 {
+  text-align: center;
   padding: 10px;
   font-weight: 400;
-  font-size: 20px !important;
+  font-size: 20px;
+}
+@media screen and (max-width: 1099px) {
+  .sidebar-nav .side-nav .logo .nav-title h3 {
+    font-size: 14px !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .sidebar-nav .side-nav .logo .nav-title h3 {
+    display: none;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .sidebar-nav .side-nav {
+    padding: 40px;
+  }
+}
+@media screen and (max-width: 1099px) {
+  .sidebar-nav .side-nav .below-nav {
+    overflow: auto;
+    height: 0px;
+    transition: all 0.2s linear;
+  }
+  .sidebar-nav .side-nav .below-nav.active {
+    height: 100% !important;
+    transition: all 0.2s linear;
+  }
+}
+.sidebar-nav .side-nav .hamburger-icon {
+  position: absolute;
+  right: 20px !important;
+  top: 24px;
+  width: 40px;
+  cursor: pointer;
+}
+.sidebar-nav .side-nav .hamburger-icon .line-1,
+.sidebar-nav .side-nav .hamburger-icon .line-2,
+.sidebar-nav .side-nav .hamburger-icon .line-3 {
+  margin-top: 8px;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+@media (min-width: 1100px) {
+  .sidebar-nav .side-nav .hamburger-icon {
+    display: none;
+  }
 }
 .sidebar-nav .side-nav .nav-list {
   padding: 20px;
@@ -236,7 +317,11 @@ body {
 }
 .main-page-col {
   padding: 10px;
-  flex-grow: 2;
+}
+@media (max-width: 1099px) {
+  .main-page-col {
+    width: 100% !important;
+  }
 }
 .main-page-col .main-page-content {
   padding: 10px;
@@ -275,10 +360,22 @@ body {
 .main-page-col .main-page-content .col-100.about-me img {
   width: 100%;
 }
+@media (max-width: 767px) {
+  .main-page-col .main-page-content .col-100.about-me {
+    display: block !important;
+  }
+}
 .main-page-col .main-page-content .col-100.about-me .about-img,
 .main-page-col .main-page-content .col-100.about-me .about-description {
   float: none;
   width: 50%;
+}
+@media (max-width: 767px) {
+  .main-page-col .main-page-content .col-100.about-me .about-img,
+  .main-page-col .main-page-content .col-100.about-me .about-description {
+    width: 100%;
+    display: none;
+  }
 }
 .main-page-col .main-page-content .col-100.about-me .about-description {
   background: #e2e2e2;
@@ -367,11 +464,22 @@ body {
   vertical-align: middle;
   float: none;
 }
+@media (max-width: 767px) {
+  .main-page-col .main-page-content .work-experience .job-image,
+  .main-page-col .main-page-content .work-experience .job-description {
+    display: block !important;
+  }
+}
 .main-page-col .main-page-content .work-experience .job-image {
   text-align: center;
 }
 .main-page-col .main-page-content .work-experience .job-description {
   padding-left: 10px;
+}
+@media (max-width: 767px) {
+  .main-page-col .main-page-content .work-experience .job-description {
+    width: 100%;
+  }
 }
 .main-page-col .main-page-content .work-experience p {
   line-height: 1.3em;
@@ -423,6 +531,11 @@ body {
   background: #5077fb;
   transition: bottom 0.3s ease;
 }
+@media (max-width: 767px) {
+  .main-page-col .main-page-content .portfolio .portfolio-item figure figcaption {
+    bottom: 0px;
+  }
+}
 .main-page-col .main-page-content .portfolio .portfolio-item figure figcaption .example-title {
   font-family: 'Poppins', 'sans-serif' !important;
   line-height: 1.2em;
@@ -472,6 +585,11 @@ body {
   margin: 0 auto;
   width: 100%;
 }
+@media (max-width: 1099px) {
+  .wrapper .row {
+    display: block !important;
+  }
+}
 .wrapper .row .col-100,
 .wrapper .row .col-75,
 .wrapper .row .col-66,
@@ -480,6 +598,16 @@ body {
 .wrapper .row .col-25 {
   display: block;
   float: left;
+}
+@media (max-width: 767px) {
+  .wrapper .row .col-100.port,
+  .wrapper .row .col-75.port,
+  .wrapper .row .col-66.port,
+  .wrapper .row .col-50.port,
+  .wrapper .row .col-33.port,
+  .wrapper .row .col-25.port {
+    width: 100% !important;
+  }
 }
 .wrapper .row .col-100 {
   width: 100%;
